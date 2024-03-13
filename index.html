@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Records</title>
+  <link href="https://unpkg.com/carbon-components/css/carbon-components.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bx--grid">
+    <div class="bx--row">
+      <div class="bx--col">
+        <h1>Student Records</h1>
+        <table class="bx--data-table" id="studentTable">
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Name</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows will be added dynamically via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup for Record Details -->
+  <div id="recordPopup" class="record-popup">
+    <div class="record-popup-content bx--card">
+      <h2>Record Details</h2>
+      <p><strong>Student ID:</strong> <span id="popupStudentID"></span></p>
+      <p><strong>Name:</strong> <span id="popupName"></span></p>
+      <p><strong>Grade:</strong> <span id="popupGrade"></span></p>
+      <button class="bx--btn bx--btn--primary" id="closePopup">Close</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/carbon-components/umd/carbon-components.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
